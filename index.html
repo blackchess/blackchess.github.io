@@ -103,7 +103,7 @@
     
     
     <article
-  id="post-hello-world"
+  id="post-Hexo搭建博客"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -114,34 +114,58 @@
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2020/07/04/hello-world/"
-    >Hello World</a> 
+  <a class="article-title" href="/2020/07/04/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"
+    >Hexo搭建博客</a> 
 </h2>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/2020/07/04/hello-world/" class="article-date">
-  <time datetime="2020-07-03T18:27:07.273Z" itemprop="datePublished">2020-07-04</time>
-</a>    
+      <a href="/2020/07/04/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time datetime="2020-07-04T14:04:44.000Z" itemprop="datePublished">2020-07-04</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Hexo/">Hexo</a> / <a class="article-category-link" href="/categories/Hexo/%E5%8D%9A%E5%AE%A2/">博客</a>
+  </div>
+   
     </div>
       
     <div class="article-entry" itemprop="articleBody">
        
-  <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+  <h2 id="一、下载安装nodejs和git"><a href="#一、下载安装nodejs和git" class="headerlink" title="一、下载安装nodejs和git"></a>一、下载安装nodejs和git</h2><p>nodejs：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a></p>
+<p>git：<a href="https://git-scm.com/download" target="_blank" rel="noopener">https://git-scm.com/download</a></p>
+<p><strong>查看是否安装成功：</strong></p>
+<p>node：</p>
+<p>​        node -v</p>
+<p>​        npm -v</p>
+<p>git：</p>
+<p>​        鼠标右键查看git GUI Here 和 git Bash Here</p>
+<h2 id="二、配置淘宝的cnpm管理器"><a href="#二、配置淘宝的cnpm管理器" class="headerlink" title="二、配置淘宝的cnpm管理器"></a>二、配置淘宝的cnpm管理器</h2><p>cnpm管理器可以更快地下载一些包：</p>
+<p>​        npm install -g cnpm –registry=<a href="http://registry.npm.taobao.org" target="_blank" rel="noopener">http://registry.npm.taobao.org</a></p>
+<p><strong>查看是否安装成功：</strong></p>
+<p>​        cnpm -v</p>
+<h2 id="三、安装Hexo框架"><a href="#三、安装Hexo框架" class="headerlink" title="三、安装Hexo框架"></a>三、安装Hexo框架</h2><p>​        cnpm install -g hexo-cli</p>
+<p><strong>查看是否安装成功：</strong></p>
+<p>​        hexo -v</p>
+<h2 id="四、建立Blog"><a href="#四、建立Blog" class="headerlink" title="四、建立Blog"></a>四、建立Blog</h2><h4 id="1-创建一个blog文件夹并进入该文件夹"><a href="#1-创建一个blog文件夹并进入该文件夹" class="headerlink" title="1.创建一个blog文件夹并进入该文件夹"></a>1.创建一个blog文件夹并进入该文件夹</h4><p>​    mkdir blog</p>
+<p>​    cd blog</p>
+<h4 id="2-初始化blog（使用超级管理员权限sudo）"><a href="#2-初始化blog（使用超级管理员权限sudo）" class="headerlink" title="2.初始化blog（使用超级管理员权限sudo）"></a>2.初始化blog（使用超级管理员权限sudo）</h4><p>​    hexo init</p>
+<h4 id="3-启动本地blog服务"><a href="#3-启动本地blog服务" class="headerlink" title="3.启动本地blog服务"></a>3.启动本地blog服务</h4><p>​    hexo s</p>
+<p>​        可通过：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 进行访问</p>
+<h4 id="4-创建第一篇博客"><a href="#4-创建第一篇博客" class="headerlink" title="4.创建第一篇博客"></a>4.创建第一篇博客</h4><p>​    hexo n “我的第一篇博客”</p>
+<h2 id="五、配置远端博客（配置在Github上）"><a href="#五、配置远端博客（配置在Github上）" class="headerlink" title="五、配置远端博客（配置在Github上）"></a>五、配置远端博客（配置在Github上）</h2><h4 id="1-创建新的Github仓库"><a href="#1-创建新的Github仓库" class="headerlink" title="1.创建新的Github仓库"></a>1.创建新的Github仓库</h4><p>​    你的Github名字.github.io</p>
+<h4 id="2-安装git部署插件"><a href="#2-安装git部署插件" class="headerlink" title="2.安装git部署插件"></a>2.安装git部署插件</h4><p>​    在创建的blog文件加下安装：</p>
+<p>​        cnpm install –save hexo-deployer-git</p>
+<h4 id="3-配置config-yml"><a href="#3-配置config-yml" class="headerlink" title="3.配置config.yml"></a>3.配置config.yml</h4><p>​    打开blog文件夹下的config.yml，进行如下配置：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">	<span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">	<span class="attr">repo:</span> <span class="string">https://github.com/YourGithubName/YourGithubName.github.io.git</span></span><br><span class="line">	<span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+<p><strong>切记：该文件为yaml文件，语法为” : “ + 空格 + 值</strong></p>
+<h4 id="4-部署到Github仓库"><a href="#4-部署到Github仓库" class="headerlink" title="4.部署到Github仓库"></a>4.部署到Github仓库</h4><p>​    hexo d</p>
+<p>​        https://你的Github名字.github.io 访问这个地址可以查看博客</p>
+<h2 id="六、配置主题样式（yilia为例）"><a href="#六、配置主题样式（yilia为例）" class="headerlink" title="六、配置主题样式（yilia为例）"></a>六、配置主题样式（yilia为例）</h2><h4 id="1-下载主题"><a href="#1-下载主题" class="headerlink" title="1.下载主题"></a>1.下载主题</h4><p>​    将主题克隆到themes/yilia</p>
+<p>​        git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia </p>
+<h4 id="2-修改config-yml"><a href="#2-修改config-yml" class="headerlink" title="2.修改config.yml"></a>2.修改config.yml</h4><p>​    在hexo的config.yml中的theme修改为下列：</p>
+<p>​        theme: yilia</p>
  
       <!-- reward -->
       
@@ -152,6 +176,8 @@
     
     <footer class="article-footer">
        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li></ul>
+
     </footer>
   </div>
 
